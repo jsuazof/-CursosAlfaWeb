@@ -6,12 +6,12 @@ import vuetify from './plugins/vuetify'
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "REMOVED_FIREBASE_WEB_API_KEY",
-  authDomain: "alfaweb-2ee01.firebaseapp.com",
-  projectId: "alfaweb-2ee01",
-  storageBucket: "alfaweb-2ee01.appspot.com",
-  messagingSenderId: "46538716321",
-  appId: "1:46538716321:web:53341724c882383904ace0"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
